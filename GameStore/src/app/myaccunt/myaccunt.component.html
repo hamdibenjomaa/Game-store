@@ -1,0 +1,35 @@
+<br><br>
+
+
+<div class="container">
+<div class="row">
+<div class="col-3"></div>
+<div class="col-3">
+    <img src=" {{info [0][5]}}  " width="150"  height="200"/>
+</div>
+
+<div class="col-3">
+    <h2>Name</h2>   <input type="text"  value="{{ info[0][0] }}"  />
+    <h2>Rank</h2>    <input type="number"  value="{{ info[0][6] }}"/>
+</div>
+<div class="2">
+   
+  
+</div>
+    
+
+
+</div>
+
+
+<br><br><br>
+
+<div class="row">   
+<div class="col-3" *ngFor="let item of games">
+<app-card-profil [title]="item"  ></app-card-profil>
+</div>
+
+
+</div>
+<br><br>
+</div>

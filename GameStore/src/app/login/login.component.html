@@ -1,0 +1,39 @@
+
+
+
+<div class="container bg-light">
+    <img src="../assets/screen-3.jpg" width="100%"   opacity ="0.3" />
+    <div class="write">
+      <h1 class="font-weight-bold text-light"></h1>
+      <form>
+        <table align="center">
+          <tr>
+            <td class="text-light font-weight-bold"><h2>user name</h2></td>
+            <td><input type="text" required  id="nom"/></td>
+          </tr>
+          <tr>
+            <td class="text-light font-weight-bold"><h2>password</h2></td>
+            <td><input type="password" required id="psw" /></td>
+          </tr>
+          <tr>
+            <td align="center">
+              <input type="reset" value="CANCEL" class="btn btn-danger" />
+            </td>
+            <td align="center">
+              <input type="submit" value="Login" class="btn btn-success"  (click)="connect()"  />
+            </td>
+          </tr>
+        </table>
+      </form>
+      <br />
+      <br />
+      <div class="row text-primary font-weight-bold" align="center">
+        
+          <h5 >
+            you don't have an account ?
+            <a   routerLink='/signin' > create one </a>
+          </h5>
+       
+      </div>
+    </div>
+  </div>

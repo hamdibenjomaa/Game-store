@@ -1,0 +1,39 @@
+
+
+
+<br><br>
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-2"></div>
+   
+    <div class="col-2">
+     <h2>All Games</h2>
+    </div>
+   <div class="col-3">
+     <div class="form-floating">
+       <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+         <option selected>Open one</option>
+         <option value="1">Sport</option>
+         <option value="2">Course</option>
+         <option value="3">action</option>
+       </select>
+       <label for="floatingSelectGrid">Categorie</label>
+     </div>
+   </div>
+ 
+<div class="col-2"> <button type="button" class="btn btn-light"  (click)="to_profil()" > <h2  >My Games</h2> </button>  </div>
+
+  </div> 
+  <br>
+
+  <div class="row">
+
+  <div class="col-4" *ngFor="let item of t ; index as i ">
+    <app-card-game [title]="item" ></app-card-game>
+  </div>
+   
+</div>
+
+</div>

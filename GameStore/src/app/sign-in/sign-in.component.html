@@ -1,0 +1,53 @@
+
+
+
+
+    <div class="container bg-light">
+      <img src="../assets/screen-3.jpg" width="100%" />
+      <div class="write1">
+        <h1 class="font-weight-bold text-light"></h1>
+        <form>
+          <table align="center">
+            <tr>
+              <td class="text-light font-weight-bold"><h2>first name</h2></td>
+              <td><input type="text" required id="name" /></td>
+            </tr>
+            <tr>
+              <td class="text-light font-weight-bold"><h2>last name</h2></td>
+              <td><input type="text" required pattern="[A-Z]{1}[a-z]*"  id="last" /></td>
+            </tr>
+            <tr>
+              <td class="text-light font-weight-bold"><h2>mail</h2></td>
+              <td>
+                <input type="mail" required  id="email"/>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-light font-weight-bold"><h2>password</h2></td>
+              <td><input type="password" required id="psw" /></td>
+            </tr>
+            <tr>
+              <td class="text-light font-weight-bold"><h2>phone</h2></td>
+              <td><input type="tel" required id="tel" /></td>
+            </tr>
+            <tr>
+              <td class="text-light font-weight-bold"><h2>photo</h2></td>
+              <td><input type="file" required  id="img"/></td>
+            </tr>
+            <tr>
+              <td align="center">
+                <input type="reset" value="CANCEL" class="btn btn-danger" />
+              </td>
+              <td>
+                <input
+                  type="submit"  (click)="insert_gamer()"
+                  value="create acount "
+                  class="btn btn-success"
+                />
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+
